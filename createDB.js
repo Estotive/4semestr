@@ -27,8 +27,8 @@ function dropDatabase(callback){
 function createHeroes(callback){
     data = [
         { title: "Нацу", nick: "natsu" },
-        { title: "Эльза", nick: "elza" },
-        { title: "Хэппи", nick: "happy" },
+        { title: "Эльза", nick: "natsu" },
+        { title: "Хэппи", nick: "natsu" },
     ]
     async.each(data, function(heroData, callback){
             var hero = new mongoose.models.Hero(heroData)
